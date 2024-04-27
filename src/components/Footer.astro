@@ -1,0 +1,24 @@
+---
+const platform = "github";
+const username = "withastro";
+const platform1= "instagram";
+const user = "vanevillatoro03"
+import Social from './Social.astro';
+---
+
+<style>
+    footer{
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+</style>
+
+
+<footer>
+    <p>¡Más información sobre mis proyectos en <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
+    <p>¡Contactame en <a href={`https://www.${platform1}.com/${user}`}>{platform1}</a>!</p>
+    <Social platform="twitter" username="astrodotbuild" />
+  <Social platform="github" username="withastro" />
+  <Social platform="youtube" username="astrodotbuild" />
+</footer>
